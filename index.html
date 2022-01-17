@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Employee Form</title>
+  </head>
+  <body>
+    <form id="form">
+      <h2>Employee Form</h2>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="" class="name-input" />
+      
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="far fa-check-circle success-icon"></i>
+      
+        <div class="error"></div>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="" />
+        
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="far fa-check-circle success-icon"></i>
+        
+        <div class="error"></div>
+        </div>
+
+      <div>
+        <label for="gender">Gender</label>
+          <input type="radio" name="gender" value="male" id="gender"> Male
+          <input type="radio" name="gender" value="female" id="gender"> Female
+          
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          
+          <div class="error"></div>         
+      </div>
+
+      <div>
+        <label for="marital">Marital Status</label>
+          <input type="radio" name="marital" value="married" id="marital"> Married
+          <input type="radio" name="marital" value="unmarried" id="marital"> Unmarried
+          
+          <i class="fas fa-exclamation-circle failure-icon"></i>
+          <i class="far fa-check-circle success-icon"></i>
+          
+          <div class="error"></div>
+      </div>
+
+      <div>
+        <label for="spouse">Name of Spouse</label>
+        <input type="text" name="spouse" id="spouse" placeholder="" disabled />
+        
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="far fa-check-circle success-icon"></i>
+        
+        <div class="error"></div>
+        </div>
+
+      <div>
+        <label for="spouse">Other Details</label>
+        <textarea name="details" id="details" rows="2"></textarea>
+      
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="far fa-check-circle success-icon"></i>
+      
+        <div class="error"></div>
+      </div>
+      
+      <div class="btn-wrapper">
+        <button id="btn" type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+  <script src="index.js"></script>
+</html>

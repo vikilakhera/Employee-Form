@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 8px;
+  width: 40%;
+  min-width: 400px;
+  padding: 0 50px 30px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px,
+    rgb(0 0 0 / 30%) 0px 30px 60px -30px,
+    rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  color: #535353;
+}
+
+form div {
+  position: relative;
+}
+
+form div input[type="text"],
+form div textarea {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: 2px solid #c4c4c4;
+  padding: 0 16px;
+  box-shadow: 2px 2px 4px rgb(0 0 0 / 10%);
+}
+
+form div input:focus {
+  border: 2px solid #000000;
+}
+
+form div i {
+  position: absolute;
+  padding: 10px;
+}
+
+.failure-icon,
+.error {
+  color: red;
+}
+
+.success-icon {
+  color: green;
+}
+
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+  height: 16px;
+}
+
+.success-icon,
+.failure-icon {
+  right: 0;
+  opacity: 0;
+}
+
+.btn-wrapper {
+  text-align: center;
+}
+button {
+  margin-top: 15px;
+  height: 40px;
+  width: 25%;
+  min-width: 80px;
+  border: none;
+  background: #3dcb96;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #35b183;
+}
